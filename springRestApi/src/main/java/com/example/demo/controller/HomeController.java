@@ -89,8 +89,8 @@ public class HomeController {
 		return bookservice.getBookById(id);
 	}
 	
-	@GetMapping("/getBookByAuthName/{authName}")
-	public ResponseEntity<?> getByAutherName(@PathVariable String authName){
-		return bookservice.getBookByAutherName(authName);  
+	@GetMapping("/getBookByAuthName/{name}")
+	public ResponseEntity<?> getByAutherName(@PathVariable String name){
+		return bookservice.getBookByAutherName(name);  
 	}
 }
